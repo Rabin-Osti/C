@@ -7,17 +7,19 @@ struct Student
 	float mark;
 };
 
-struct Student getInfo(struct Student []);
+void getInfo(struct Student []);
 void displayInfo(struct Student []);
 
 void main()
 {
     struct Student s[10];
     getInfo(s); // array affai ma pointer ho tei vayera memory ma update hunxa
+	// yes ma chai &s hudaina &s lekhesi temp ma *temp lekhna parxa ra arrow operator
+	//use garna parxa
     displayInfo(s);
 }
 
-struct Student getInfo(struct Student temp[]){
+void getInfo(struct Student temp[]){
     int i;
     printf("Enter details of 10 students: \n");
     for(i=0; i<10; i++)

@@ -10,7 +10,7 @@ struct Student
 	float mark;
 };
 
-struct Student getInfo(struct Student [],int);
+void getInfo(struct Student [],int);
 void displayInfo(struct Student [],int);
 
 void main()
@@ -24,7 +24,7 @@ void main()
     displayInfo(s,n);
 }
 
-struct Student getInfo(struct Student temp[],int n){
+void getInfo(struct Student temp[],int n){
     int i;
     for(i=0; i<n; i++)
 	{
