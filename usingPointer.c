@@ -7,7 +7,7 @@ struct Student
 	float mark;
 } ;
 void getInfo(struct Student *temp);
-void getInfo(struct Student *temp);
+void display(struct Student *temp);
 
 
 void main()
@@ -26,6 +26,7 @@ void getInfo(struct Student *temp){
 	printf("Enter Marks of a students:\n");
 	scanf("%f",&temp->mark);
 }
+
 void display(struct Student *temp)
 {
 	printf("\nThe information of a Student:\n");
